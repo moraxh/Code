@@ -1,0 +1,5 @@
+# Ignore TODO
+/TODO.txt
+
+# Ignore vscode dir
+*.vscode
