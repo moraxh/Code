@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Currency Converter</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="Cba">
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>130</y>
+      <width>275</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QComboBox{
+	background-color:   #ffffff;
+	border-color:       #b0b0b0;
+	border-style:       solid;
+ 	border-width:       1px;
+	border-radius:      5px;
+    color: #000000;
+}
+
+QComboBox:hover {
+    background-color: #e8e8e8;
+}
+
+QComboBox::down-arrow{
+	image: url(:/images/Assets/Arrow-down.png);
+    width: 21px;
+    height: 12px;
+    padding: 1px 5px 0px 0px;
+}
+
+QComboBox::drop-down{
+    border-style: solid; 
+	border-color: #b0b0b0;
+}
+
+QListView{
+    background-color:   #ffffff;
+	border-color:       #b0b0b0;
+	border-style:       solid;
+ 	border-width:       1px;
+	border-radius:      5px;
+}
+
+QListView:selected {
+    background-color: #e8e8e8;
+    border: none;
+    color: black;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="modelColumn">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>US Dollar (USD)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Euro (EUR)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>British Pound (GBP)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Swiss Franc (CHF)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Canadian Dollar (CAD)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>South African Rand (ZAR)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mexican Peso (MXN)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Indian Rupee (INR)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Japanese Yen (JPY)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chinese Yuan (CNY)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDoubleSpinBox" name="Dsba">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>275</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QDoubleSpinBox{
+    background-color: #ffffff;
+    border-color: #b0b0b0;
+    border-style: solid;
+
+    border-radius: 5px;
+    border-width: 1px;
+    color: #000000;
+}
+
+QDoubleSpinBox:hover {
+    background-color: #e8e8e8; 
+}
+     </string>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="keyboardTracking">
+     <bool>false</bool>
+    </property>
+    <property name="showGroupSeparator" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="minimum">
+     <double>-99999999999999991611392.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>99999999999999991611392.000000000000000</double>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::DefaultStepType</enum>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="Dsbb">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>275</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QDoubleSpinBox{
+    background-color: #ffffff;
+    border-color: #b0b0b0;
+    border-style: solid;
+
+    border-radius: 5px;
+    border-width: 1px;
+    color: #000000;
+}
+
+QDoubleSpinBox:hover {
+    background-color: #e8e8e8; 
+}
+     </string>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="correctionMode">
+     <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+    </property>
+    <property name="keyboardTracking">
+     <bool>false</bool>
+    </property>
+    <property name="showGroupSeparator" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="decimals">
+     <number>2</number>
+    </property>
+    <property name="minimum">
+     <double>-99999999999999991611392.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>99999999999999991611392.000000000000000</double>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::DefaultStepType</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="La">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(111, 111, 111);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lb">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(111, 111, 111);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>30</y>
+      <width>461</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Currency Converter</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Cbb">
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>180</y>
+      <width>275</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QComboBox{
+	background-color:   #ffffff;
+	border-color:       #b0b0b0;
+	border-style:       solid;
+ 	border-width:       1px;
+	border-radius:      5px;
+    color: #000000;
+}
+
+QComboBox:hover {
+    background-color: #e8e8e8;
+}
+
+QComboBox::down-arrow{
+	image: url(:/images/Assets/Arrow-down.png);
+    width: 21px;
+    height: 12px;
+    padding: 1px 5px 0px 0px;
+}
+
+QComboBox::drop-down{
+    border-style: solid; 
+	border-color: #b0b0b0;
+}
+
+QListView{
+    background-color:   #ffffff;
+	border-color:       #b0b0b0;
+	border-style:       solid;
+ 	border-width:       1px;
+	border-radius:      5px;
+}
+
+QListView:selected {
+    background-color: #e8e8e8;
+    border: none;
+    color: black;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>16</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>US Dollar (USD)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Euro (EUR)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>British Pound (GBP)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Swiss Franc (CHF)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Canadian Dollar (CAD)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>South African Rand (ZAR)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mexican Peso (MXN)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Indian Rupee (INR)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Japanese Yen (JPY)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chinese Yuan (CNY)</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

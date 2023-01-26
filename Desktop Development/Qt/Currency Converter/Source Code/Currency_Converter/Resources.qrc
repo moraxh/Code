@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Assets/Arrow-down.png</file>
+        <file>Assets/flags/cad.svg</file>
+        <file>Assets/flags/chf.svg</file>
+        <file>Assets/flags/cny.svg</file>
+        <file>Assets/flags/eur.svg</file>
+        <file>Assets/flags/gbp.svg</file>
+        <file>Assets/flags/inr.svg</file>
+        <file>Assets/flags/jpy.svg</file>
+        <file>Assets/flags/mxn.svg</file>
+        <file>Assets/flags/usd.svg</file>
+        <file>Assets/flags/zar.svg</file>
+        <file>Assets/Change.svg</file>
+    </qresource>
+</RCC>
