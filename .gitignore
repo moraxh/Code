@@ -2,4 +2,5 @@
 /TODO.txt
 
 # Ignore vscode dir
-*.vscode
+bin/
+.vscode/
